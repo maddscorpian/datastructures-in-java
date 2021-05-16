@@ -15,6 +15,7 @@ public class Stack<T> {
 	}
 
 	public void push(T data) {
+		System.out.println("Pushing to stack");
 		if (top + 1 >= STACK_SIZE) {
 			System.out.println("Stack is full.");
 			return;
@@ -25,6 +26,7 @@ public class Stack<T> {
 	}
 	
 	public T pop() {
+		System.out.println("Poping from stack");
 		if (top <=-1) {
 			System.out.println("Stack is empty");
 			return null;

@@ -1,4 +1,4 @@
-package com.madd.java.ds.test;
+package com.madd.java.ds.test.stack;
 
 import com.madd.java.ds.model.Data;
 import com.madd.java.ds.stack.Stack;

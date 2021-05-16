@@ -4,8 +4,6 @@ public class Data {
 	private String name;
 	private int value;
 	
-	
-	
 	public Data(String name, int value) {
 		super();
 		this.name = name;
