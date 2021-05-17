@@ -8,18 +8,20 @@ public class ListTest {
 	public static void main(String[] args) {
 		System.out.println("Testing list. Start");
 		SinglyLinkedList<Data> sll = new SinglyLinkedList<Data>();
-		sll.remove();
-		sll.add(new Data("Item1", 1));
-		sll.remove();
+		sll.insertFirst(new Data("Item1", 1));
 		
-		sll.add(new Data("Item1", 2));
-		sll.add(new Data("Item1", 3));
-		sll.add(new Data("Item1", 4));
-		sll.add(new Data("Item1", 5));
+		sll.insertFirst(new Data("Item1", 2));
+		sll.insertFirst(new Data("Item1", 3));
+		sll.insertFirst(new Data("Item1", 4));
+		sll.insertFirst(new Data("Item1", 5));
+		//sll.insertLast(new Data("Item1", 6));
+		//sll.insertLast(new Data("Item1", 7));
 		
-		
-
-		
+		Data data = sll.deleteFirst();
+		while(data != null) {
+			System.out.println("Data " + data.getValue());
+			data = sll.deleteFirst();
+		}
 		// Loop and display all the list
 		System.out.println("Testing list. End");
 	}
