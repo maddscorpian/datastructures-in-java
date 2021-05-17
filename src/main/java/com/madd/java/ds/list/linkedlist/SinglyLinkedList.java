@@ -1,5 +1,7 @@
 package com.madd.java.ds.list.linkedlist;
 
+import com.madd.java.ds.exception.NoDataException;
+import com.madd.java.ds.model.Data;
 import com.madd.java.ds.model.Node;
 
 public class SinglyLinkedList<T> {
@@ -16,11 +18,14 @@ public class SinglyLinkedList<T> {
 	}
 	
 	// delete first
-	public T deleteFirst(){
+	public T deleteFirst() throws NoDataException{
 		System.out.println("deleteFirst");
-		Node<T> temp = head;
+		if (head == null){
+			throw new NoDataException("End of data Structure. No more data.");
+		}
+		T data = head.getData();
 		head = head.getNext();
-		return temp.getData();
+		return data;
 	}
 	
 	public void insertLast(T data) {
@@ -28,7 +33,7 @@ public class SinglyLinkedList<T> {
 		// Save for reference. 
 		Node<T> current  = head;
 		while(current.getNext() != null) {
-			current.setNext(current.getNext());
+			current = current.getNext();
 		}
 		Node<T> node = new Node<T>();
 		node.setData(data);
