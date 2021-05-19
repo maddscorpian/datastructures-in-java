@@ -41,8 +41,8 @@ public class SinglyLinkedList<T> {
 		current = null;
 		//head = node;
 	}
-	
 
-	
-		
+	public void insertAfter(T data){
+		// First find the node for that data.
+	}
 }

@@ -4,6 +4,8 @@ import com.madd.java.ds.exception.NoDataException;
 import com.madd.java.ds.list.linkedlist.SinglyLinkedList;
 import com.madd.java.ds.model.Data;
 
+import java.util.LinkedList;
+
 public class ListTest {
 	
 	public static void main(String[] args) {
