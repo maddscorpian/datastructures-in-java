@@ -10,5 +10,9 @@ public class Utility {
 			System.out.println("");
 		}
 	}
+	
+	public static int minValue(int a, int b) {
+		return a < b ? a : b;
+	}
 
 }
