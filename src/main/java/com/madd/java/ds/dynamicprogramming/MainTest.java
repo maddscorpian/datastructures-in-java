@@ -8,6 +8,7 @@ import com.madd.java.util.Math;
 public class MainTest {
 
 	public static void main(String[] args) {
+		
 		int n = 5;
 		Instant start = Instant.now();
 		
