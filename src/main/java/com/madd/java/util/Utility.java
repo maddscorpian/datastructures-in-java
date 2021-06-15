@@ -14,5 +14,13 @@ public class Utility {
 	public static int minValue(int a, int b) {
 		return a < b ? a : b;
 	}
+	
+	
+	public static void display1DArray(int[] input) {
+		
+		for (int i=0;i<input.length;i++) {
+			System.out.println(input[i]);
+		}
+	}
 
 }

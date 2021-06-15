@@ -5,6 +5,11 @@ import java.util.List;
 
 public class Math {
 	
+	public Math() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public int factorialDyanamicProgramming(int n) {
 		List<Integer> factorials = new ArrayList<Integer>();
 		// factorial of 0 is 1. 
@@ -31,5 +36,7 @@ public class Math {
 		System.out.println(math.factorialDyanamicProgramming(5));
 		
 	}
+	
+	
 
 }
